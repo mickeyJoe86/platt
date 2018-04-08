@@ -2,11 +2,11 @@
 	<div class="header">
 		<nav class="nav">
 			<div class="navbar">
-				<div class="nav-container">				
+				<div class="nav-container">
 					<a class="nav-brand" href="#">
 						<img src="/assets/img/logo.png" alt="Platt Electric Logo" />
 					</a>
-				</div> 
+				</div>
 				<div class="nav-container">
 					<a v-for="(navLink, i) in navLinks"
 						:key="i"
@@ -15,7 +15,7 @@
 						<img :src="navLink.iconSource" />
 						<span v-if="navLink.notification" class="notification"></span>
 					</a>
-				</div>				
+				</div>
 			</div>
 		</nav>
 		<PlattSearch />
@@ -23,39 +23,39 @@
 </template>
 
 <script>
-import PlattSearch from "./PlattSearch";
+import PlattSearch from './PlattSearch'
 export default {
-  name: "PlattHeader",
-  data() {
+  name: 'PlattHeader',
+  data () {
     return {
       navLinks: [
         {
-          title: "Search",
-					iconSource: "/assets/icons/white/ic_search.png",
-					notification: false
+          title: 'Search',
+          iconSource: '/assets/icons/white/ic_search.png',
+          notification: false
         },
         {
-          title: "Cart",
-					iconSource: "/assets/icons/white/ic_shopping_cart.png",
-					notification: false
+          title: 'Cart',
+          iconSource: '/assets/icons/white/ic_shopping_cart.png',
+          notification: false
         },
         {
-          title: "Account",
-					iconSource: "/assets/icons/white/ic_person.png",
-					notification: true
+          title: 'Account',
+          iconSource: '/assets/icons/white/ic_person.png',
+          notification: true
         },
         {
-          title: "Menu",
-					iconSource: "/assets/icons/white/ic_menu.png",
-					notification: false
+          title: 'Menu',
+          iconSource: '/assets/icons/white/ic_menu.png',
+          notification: false
         }
       ]
-    };
+    }
   },
   components: {
     PlattSearch
   }
-};
+}
 </script>
 
 <style lang="scss">

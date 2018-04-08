@@ -1,0 +1,20 @@
+@mixin button-primary {
+	& {
+		padding: 12px 32px;
+		background-color: $buttonPrimaryBackgroundColor;
+		border: none;
+		border-radius: 22px;
+		display: inline-flex;
+		align-items: center; 
+
+		font-size: 1.1em;
+
+		&:hover {
+			background-color: darken($buttonPrimaryBackgroundColor, 12%);
+		}
+
+		.footer-icon {
+			margin-right: 16px
+		}
+	}
+}

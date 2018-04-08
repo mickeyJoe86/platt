@@ -1,0 +1,10 @@
+@mixin link-primary {
+	& {
+		color: $linkPrimaryColor;
+		text-decoration: none;
+
+		&:hover {
+			border-bottom: 1px solid $linkPrimaryBorderBottomColor;
+		}
+	}
+}

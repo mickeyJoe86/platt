@@ -1,19 +1,19 @@
 <template>
 	<div class="search-container">
-		<input 
+		<input
 			class="search-input"
-			type="text" 
-			name="search" 
+			type="text"
+			name="search"
 			placeholder="What are you looking for?" />
 			<span class="search-btn">
 				<img src="/assets/icons/black/ic_search.png" />
-			</span>	
+			</span>
 	</div>
 </template>
 
 <script>
 export default {
-	name: 'PlattSearch',
+  name: 'PlattSearch'
 
 }
 </script>
@@ -21,7 +21,7 @@ export default {
 <style lang="scss">
 @import "../scss/index";
 
-.search-container {
+.search-container { //TODO these should go in the header
 	padding: 15px;
 	display: flex;
 	flex-direction: row;
@@ -36,11 +36,11 @@ export default {
 
 		&::placeholder {
 			color: #aeaeae;
-			font-size: 1.4em;			
+			font-size: 1.4em;
 		}
 	}
 
-	.search-btn {		
+	.search-btn {
 		position: relative;
 		right: 30px;
 		top: 18px;

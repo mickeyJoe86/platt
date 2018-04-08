@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <PlattHeader msg="Welcome to Your Vue.js App"/>
+    <PlattHeader />
+    <PlattFooter />
   </div>
 </template>
 
 <script>
 import PlattHeader from './components/PlattHeader.vue'
+import PlattFooter from './components/PlattFooter.vue'
 
 export default {
   name: 'app',
   components: {
-    PlattHeader
+    PlattHeader,
+    PlattFooter
   }
 }
 </script>
