@@ -8,3 +8,10 @@
 		}
 	}
 }
+
+@mixin link-primary-dark {
+	& {
+		color: #626262;
+		text-decoration: none;
+	}
+}
