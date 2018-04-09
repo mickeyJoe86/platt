@@ -1,20 +1,38 @@
-@mixin button-primary {
-	& {
-		padding: 12px 32px;
-		background-color: $buttonPrimaryBackgroundColor;
-		border: none;
-		border-radius: 22px;
-		display: inline-flex;
-		align-items: center; 
+%button {
+	display: flex;	
+	align-items: center;
+	padding: 12px 32px;
+	border: none;
+	border-radius: 22px;
+	display: inline-flex;
+	align-items: center;
+	font-size: 1.1em;
 
-		font-size: 1.1em;
+	.footer-icon {
+		margin-right: 16px
+	}
+}
+
+@mixin button-primary {
+	@extend %button;
+	flex-direction: row;
+	& {
+		background-color: $buttonPrimaryBackgroundColor;		
 
 		&:hover {
 			background-color: darken($buttonPrimaryBackgroundColor, 12%);
 		}
+	}
+}
 
-		.footer-icon {
-			margin-right: 16px
-		}
+@mixin button-secondary {
+	@extend %button;
+	flex-direction: column;
+	color: #555;
+	& {
+		background-color: #eee;
+	}
+	&:hover {
+		background-color: darken(#eee, 12%);
 	}
 }

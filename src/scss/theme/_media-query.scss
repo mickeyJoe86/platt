@@ -1,0 +1,17 @@
+@mixin repond($min-width, $max-width) {
+  @if $min-width != null and $max-width != null {
+    @media (min-width: $min-width, $max-width) {
+      @content;
+    }
+  }
+  @else if $min-width != null and $max-width == null {
+    @media (min-width: $min-width) {
+      @content;
+    }
+  }
+  @else if $min-width == null and $max-width != null {
+    @media (max-width: $max-width) {
+      @content;
+    }
+  }
+}

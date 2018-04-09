@@ -1,4 +1,4 @@
-@mixin notification {
+%notification {
 	& {
 		position: relative;
 		bottom: 12px;
@@ -11,10 +11,8 @@
 }
 
 @mixin notification-important {
-	& {
-		@include notification;
-		background-color: #ffc107;
-	}
+	@extend %notification;
+	background-color: #ffc107;
 }
 
 // Could add other mixins for other states

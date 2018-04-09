@@ -1,17 +1,28 @@
-@mixin link-primary {
-	& {
-		color: $linkPrimaryColor;
-		text-decoration: none;
+%link {
+	text-decoration: none;
+}
 
-		&:hover {
-			border-bottom: 1px solid $linkPrimaryBorderBottomColor;
-		}
+@mixin link-primary {
+	@extend %link;
+	& {
+		color: $linkPrimaryColor;	
 	}
 }
 
 @mixin link-primary-dark {
+	@extend %link;
 	& {
 		color: #626262;
-		text-decoration: none;
+	}
+}
+
+@mixin link-inline {
+	@extend %link;
+	& {
+		color: green;
+
+		&:hover {
+			border-bottom: solid 2px green;
+		}
 	}
 }
