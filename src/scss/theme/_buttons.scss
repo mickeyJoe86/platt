@@ -31,11 +31,11 @@
 @mixin button-secondary {
 	@extend %button;
 	flex-direction: column;
-	color: #555;
+	color: $bodyCopyColor;
 	& {
-		background-color: #eee;
+		background-color: $primaryBackgroundGray;
 	}
 	&:hover {
-		background-color: darken(#eee, 12%);
+		background-color: darken($primaryBackgroundGray, 12%);
 	}
 }

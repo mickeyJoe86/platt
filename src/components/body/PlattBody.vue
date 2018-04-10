@@ -5,7 +5,7 @@
         :key="i"
         :iconSrc="button.src"
         :label="button.title" />
-    </section> 
+    </section>
 
     <section class="main-markets">
       <p class="main-markets-title">Product Markets</p>
@@ -18,9 +18,9 @@
           <template slot="title">
             <p>{{ tile.title }}</p>
           </template>
-        </PlattTile>  
+        </PlattTile>
       </div>
-    </section> 
+    </section>
 
     <section class="main-promos">
       <PlattCard>
@@ -38,7 +38,7 @@
           <p class="headline">Get Started Today</p>
           <p class="headline">Become a <a href="#">Platt Plus</a> Member.</p>
           <button class="button-primary">Learn More</button>
-          
+
         </template>
       </PlattCard>
       <PlattCard>
@@ -63,7 +63,7 @@
         <template slot="title">
           <p>{{ tile.title }}</p>
         </template>
-      </PlattTile> 
+      </PlattTile>
     </section>
 
     <section class="main-mobile-banner">
@@ -79,18 +79,18 @@
   </main>
 </template>
 <script>
-import PlattCard from "./Card/PlattCard";
-import PlattTile from "./Tile/PlattTile";
-import PlattMainButton from "./MainButton/PlattMainButton";
+import PlattCard from './Card/PlattCard'
+import PlattTile from './Tile/PlattTile'
+import PlattMainButton from './MainButton/PlattMainButton'
 
 export default {
-  name: "PlattBody",
+  name: 'PlattBody',
   components: {
     PlattCard,
     PlattTile,
     PlattMainButton
   },
-  data() {
+  data () {
     return {
       mainButtons: [
         { title: 'Categories', src: 'assets/icons/green/ic_line_style.png'},
@@ -101,7 +101,7 @@ export default {
         { title: 'Super Tool Day & Dynamic Data Day', src: 'assets/img/super-tool-day.png'},
         { title: 'Branch Locations', src: 'assets/img/ic_location_b.png'},
         { title: 'Help Center', src: 'assets/img/ic_helpcenter.png'},
-        { title: 'Platt University', src: 'assets/img/ic_platt-u.png'},
+        { title: 'Platt University', src: 'assets/img/ic_platt-u.png'}
       ],
       marketTiles: [
         { title: 'DataComm', src: 'assets/img/datacomm.png'},
@@ -109,11 +109,11 @@ export default {
         { title: 'Industrial', src: 'assets/img/industrial.png'},
         { title: 'Lighting', src: 'assets/img/lighting.png'},
         { title: 'Energy Effeciency', src: 'assets/img/energy.png'},
-        { title: 'Utility', src: 'assets/img/utility.png'},
+        { title: 'Utility', src: 'assets/img/utility.png'}
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style lang="scss">
@@ -121,7 +121,7 @@ export default {
 .main {
   width: 100%;
   padding: 20px 0;
-  background-color: #eee;
+  background-color: $primaryBackgroundGray;
 
   &-buttons {
     width: 100%;
@@ -137,7 +137,7 @@ export default {
       text-align: center;
       font-weight: bold;
       font-size: 1.2em;
-      color: #111;
+      color: $buttonFontColorDark;
       margin-bottom: 10px;
     }
 

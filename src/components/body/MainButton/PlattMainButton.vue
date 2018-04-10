@@ -11,12 +11,13 @@
 
 <script>
 export default {
-  name: "PlattMainButton",
+  name: 'PlattMainButton',
   props: ['label', 'iconSrc']
-};
+}
 </script>
 
 <style lang="scss">
+@import "../../../scss/index";
 .main-button {
   display: flex;
   flex-direction: column;
@@ -39,7 +40,7 @@ export default {
   &-label {
     padding: 15px 0;
     font-size: 1.1em;
-    color: #626262;
+    color: $buttonFontColorDark;
     text-align: center;
   }
 }

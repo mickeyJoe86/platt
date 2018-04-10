@@ -24,8 +24,8 @@
 
 <script>
 export default {
-  name: "PlattFooter"
-};
+  name: 'PlattFooter'
+}
 </script>
 
 <style lang="scss">
@@ -36,14 +36,14 @@ export default {
   width: 100%;
   padding: 22px 0;
   background-color: $primaryBackgroundDark;
-  color: #fff;
+  color: $bodyCopyLight;
 
   &-panel {
     display: flex;
     flex-direction: column;
     align-items: center;
 		margin: 16px 0;
-		
+
     &-content {
       font-size: 1.2em;
     }
@@ -64,16 +64,16 @@ export default {
 				line-height: 42px;
 			}
 			p:last-of-type {
-				color: darken(#eee, 25%);
+				color: darken($bodyCopyLight, 25%);
 				font-size: .9em;
 				font-weight: lighter;
 			}
 		}
-		
+
 		&:nth-of-type(2) {
 			p {
 				font-size: 1.2em;
-				color: darken(#eee, 25%);
+				color: darken($bodyCopyLight, 25%);
 			}
 		}
 

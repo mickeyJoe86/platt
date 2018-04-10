@@ -5,11 +5,11 @@
       v-bind:class="{ 'lead-item': i === 0 }"
       class="nav-list-item">
       <a href="#" class="nav-list-item-link">
-        <img 
+        <img
           class="nav-list-item-link-img"
           :src="item.iconPath" />
           {{ item.text }}
-        <img 
+        <img
           class="nav-list-item-link-img"
           src="assets/icons/black/ic_arrow_forward.png" />
       </a>
@@ -18,44 +18,44 @@
 </template>
 
 <script>
-const iconRootPath = "assets/icons/black/";
+const iconRootPath = 'assets/icons/black/'
 export default {
-  name: "PlattNavList",
-  data() {
+  name: 'PlattNavList',
+  data () {
     return {
       navList: [
         {
-          text: "Shop all categories",
+          text: 'Shop all categories',
           iconPath: `${iconRootPath}ic_categories.png`
         },
         {
-          text: "My catalog",
+          text: 'My catalog',
           iconPath: `${iconRootPath}ic_playlist_add_check.png`
         },
         {
-          text: "My List",
+          text: 'My List',
           iconPath: `${iconRootPath}ic_list.png`
         },
         {
-          text: "Live Help",
-          iconPath: "assets/icons/green/ic_chat-active.png"
+          text: 'Live Help',
+          iconPath: 'assets/icons/green/ic_chat-active.png'
         },
         {
-          text: "PIM",
+          text: 'PIM',
           iconPath: `${iconRootPath}ic_check_circle.png`
         },
         {
-          text: "Account",
+          text: 'Account',
           iconPath: `${iconRootPath}ic_place.png`
         },
         {
-          text: "Branch Locations",
+          text: 'Branch Locations',
           iconPath: `${iconRootPath}ic_place.png`
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style lang="scss">
@@ -64,7 +64,7 @@ export default {
   padding: 16px 10px;
 
   &-item {
-    border-top: solid 1px #aeaeae;
+    border-top: solid 1px $borderColorGray;
     padding: 0 32px 0 16px;
 
     &-link {
@@ -73,7 +73,7 @@ export default {
       padding: 12px 0 12px 0;
       font-size: 1.1em;
       height: 100%;
-      width: 100%; 
+      width: 100%;
       font-weight: lighter;
 
       &-img:first-of-type {
@@ -97,7 +97,7 @@ export default {
 //Medium
 @media only screen and (min-width: 768px) {
   .nav-list {
-    border: solid 1px #aeaeae;
+    border: solid 1px $borderColorGray;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -107,8 +107,8 @@ export default {
       padding-left: 0;
       padding-right: 0;
       width: 33%;
-      text-align: center;      
-      border-left: solid 1px #aeaeae;
+      text-align: center;
+      border-left: solid 1px $borderColorGray;
 
       &-link {
         &-img:last-of-type {

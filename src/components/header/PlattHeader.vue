@@ -1,6 +1,6 @@
 <template>
-	<div class="header"> 
-    <div class="header-nav">   
+	<div class="header">
+    <div class="header-nav">
       <nav>
         <div class="header-nav-navbar">
           <div class="header-nav-navbar-brand">
@@ -20,7 +20,7 @@
               <span class="notification"></span>
             </a>
             <a href="#" class="nav-icon" @click="handleMenuClick">
-              <img src="assets/icons/white/ic_menu.png" />              
+              <img src="assets/icons/white/ic_menu.png" />
             </a>
           </div>
         </div>
@@ -34,26 +34,26 @@
 </template>
 
 <script>
-import PlattSearch from "./PlattSearch";
-import PlattNavList from "./PlattNavList";
+import PlattSearch from './PlattSearch'
+import PlattNavList from './PlattNavList'
 
 export default {
-  name: "PlattHeader",
+  name: 'PlattHeader',
   components: {
     PlattSearch,
     PlattNavList
   },
-  data() {
+  data () {
     return {
       isMenuOpen: false
-    };
+    }
   },
   methods: {
-    handleMenuClick() {
-      this.isMenuOpen = !this.isMenuOpen;
+    handleMenuClick () {
+      this.isMenuOpen = !this.isMenuOpen
     }
   }
-};
+}
 </script>
 
 <style lang="scss">

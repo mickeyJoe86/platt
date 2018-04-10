@@ -8,7 +8,7 @@
 		color: $linkPrimaryColor;	
 
 		&:hover span {
-			border-bottom: solid 2px #eee;
+			border-bottom: solid 2px $primaryBackgroundGray;
 		}
 	}
 }
@@ -16,17 +16,17 @@
 @mixin link-primary-dark {
 	@extend %link;
 	& {
-		color: #626262;
+		color: $linkColorDark;
 	}
 }
 
 @mixin link-inline {
 	@extend %link;
 	& {
-		color: green;
+		color: $inlineLinkColor;
 
 		&:hover {
-			border-bottom: solid 2px green;
+			border-bottom: solid 2px $inlineLinkColor;
 		}
 	}
 }

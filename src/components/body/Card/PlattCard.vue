@@ -33,31 +33,31 @@
 
 <script>
 export default {
-  name: "PlattCard",
+  name: 'PlattCard',
   computed: {
-    hasPromo() {
-      return !!this.$slots.promo;
+    hasPromo () {
+      return !!this.$slots.promo
     },
-    hasMediaBackground() {
-      return !!this.$slots.mediaBackground;
+    hasMediaBackground () {
+      return !!this.$slots.mediaBackground
     },
-    hasTitle() {
-      return !!this.$slots.title;
+    hasTitle () {
+      return !!this.$slots.title
     },
-    hasRecentHeader() {
-      return !!this.$slots.recentHeader;
+    hasRecentHeader () {
+      return !!this.$slots.recentHeader
     },
-    hasRecentItems() {
-      return !!this.$slots.recentItems;
+    hasRecentItems () {
+      return !!this.$slots.recentItems
     },
-    hasCta() {
-      return !!this.$slots.cta;
+    hasCta () {
+      return !!this.$slots.cta
     },
-    hasBanner() {
-      return !!this.$slots.banner;
+    hasBanner () {
+      return !!this.$slots.banner
     }
   }
-};
+}
 </script>
 
 <style lang="scss" >
@@ -67,7 +67,7 @@ export default {
   height: 180px;
   width: 96%;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
-  background-color: #fff;
+  background-color: $primaryBackgroundLight;
 
   &-promo {
     height: 100%;

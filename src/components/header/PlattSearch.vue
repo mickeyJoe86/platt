@@ -1,18 +1,18 @@
 <template>
 	<div class="search">
-		<input			
+		<input
 			class="search-input"
 			type="text"
 			name="search"
-			placeholder="What are you looking for?" 
+			placeholder="What are you looking for?"
 			autocomplete="off"
-			@input="handleInput" 
+			@input="handleInput"
 			@blur="handleFocusOut" />
 			<span class="search-input-btn">
 				<img src="assets/icons/black/ic_search.png" />
 			</span>
 			<ul class="search-results" v-if="results.length > 0">
-				<li 
+				<li
 					v-for="(result, i) in results"
 					:key="i"
 					class="search-results-item">
@@ -23,40 +23,40 @@
 </template>
 
 <script>
-import debounce from "lodash.debounce";
+import debounce from 'lodash.debounce'
 
 export default {
-  name: "PlattSearch",
-  data() {
+  name: 'PlattSearch',
+  data () {
     return {
       results: []
-    };
+    }
   },
   methods: {
-    handleInput: debounce(function(e) {
-      this.results = [];
-      const query = e.target.value;
-      if (query.length > 0 && typeof query === "string") {
-        this.callApi(e.target.value);
+    handleInput: debounce(function (e) {
+      this.results = []
+      const query = e.target.value
+      if (query.length > 0 && typeof query === 'string') {
+        this.callApi(e.target.value)
       }
     }, 600),
-    callApi(searchTerm) {
+    callApi (searchTerm) {
       this.$http
         .get(`https://swapi.co/api/people/?search=${searchTerm}`)
         .then(res => {
-          this.results = [...res.data.results];
+          this.results = [...res.data.results]
         })
         .catch(err => {
-          console.log(err);
-        });
+          console.log(err)
+        })
     },
-    handleFocusOut() {
+    handleFocusOut () {
       setTimeout(() => {
-        this.results = [];
-      }, 200);
+        this.results = []
+      }, 200)
     }
   }
-};
+}
 </script>
 
 <style lang="scss">
@@ -71,7 +71,7 @@ export default {
 
   &-input {
     font-size: 1.1em;
-    color: #626262;
+    color: $formInputColor;
     width: 100%;
     border-radius: 3px;
     height: 46px;
@@ -80,7 +80,7 @@ export default {
     padding-left: 20px;
 
     &::placeholder {
-      color: #aeaeae;
+      color: $formInputPlaceholderColor;
     }
 
     &-btn {
@@ -94,15 +94,15 @@ export default {
     position: absolute;
     top: 53px;
     width: 100%;
-    background-color: #fff;
-    border: 1px solid grey;
+    background-color: $primaryBackgroundLight;
+    border: 1px solid $borderColorGray;
     border-radius: 3px;
     max-height: 300px;
     overflow: auto;
 
     &-item {
       padding: 10px;
-      border-top: solid 1px grey;
+      border-top: solid 1px $borderColorGray;
       &:first-of-type {
         border-top: none;
       }
