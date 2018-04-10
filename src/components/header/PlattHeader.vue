@@ -5,7 +5,7 @@
         <div class="header-nav-navbar">
           <div class="header-nav-navbar-brand">
             <a class="header-nav-navbar-brand-logo" href="#">
-              <img src="/assets/img/logo.png" alt="Platt Electric Logo" />
+              <img src="assets/img/logo.png" alt="Platt Electric Logo" />
             </a>
           </div>
           <div class="header-nav-navbar-links">
@@ -36,22 +36,22 @@ export default {
       navLinks: [
         {
           title: "Search",
-          iconSource: "/assets/icons/white/ic_search.png",
+          iconSource: "assets/icons/white/ic_search.png",
           notification: false
         },
         {
           title: "Cart",
-          iconSource: "/assets/icons/white/ic_shopping_cart.png",
+          iconSource: "assets/icons/white/ic_shopping_cart.png",
           notification: false
         },
         {
           title: "Account",
-          iconSource: "/assets/icons/white/ic_person.png",
+          iconSource: "assets/icons/white/ic_person.png",
           notification: true
         },
         {
           title: "Menu",
-          iconSource: "/assets/icons/white/ic_menu.png",
+          iconSource: "assets/icons/white/ic_menu.png",
           notification: false
         }
       ]
