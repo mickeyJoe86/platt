@@ -9,19 +9,27 @@
             </a>
           </div>
           <div class="header-nav-navbar-links">
-            <a v-for="(navLink, i) in navLinks"
-              :key="i"
-              class="nav-icon"
-              href="#">
-              <img :src="navLink.iconSource" />
-              <span v-if="navLink.notification" class="notification"></span>
+            <a href="#" class="nav-icon">
+              <img src="assets/icons/white/ic_search.png" />
+            </a>
+            <a href="#" class="nav-icon">
+              <img src="assets/icons/white/ic_shopping_cart.png" />
+            </a>
+            <a href="#" class="nav-icon">
+              <img src="assets/icons/white/ic_person.png" />
+              <span class="notification"></span>
+            </a>
+            <a href="#" class="nav-icon" @click="handleMenuClick">
+              <img src="assets/icons/white/ic_menu.png" />              
             </a>
           </div>
         </div>
       </nav>
 		  <PlattSearch />
     </div>
-    <PlattNavList />
+    <div v-show="isMenuOpen">
+      <PlattNavList />
+    </div>
 	</div>
 </template>
 
@@ -31,35 +39,19 @@ import PlattNavList from "./PlattNavList";
 
 export default {
   name: "PlattHeader",
-  data() {
-    return {
-      navLinks: [
-        {
-          title: "Search",
-          iconSource: "assets/icons/white/ic_search.png",
-          notification: false
-        },
-        {
-          title: "Cart",
-          iconSource: "assets/icons/white/ic_shopping_cart.png",
-          notification: false
-        },
-        {
-          title: "Account",
-          iconSource: "assets/icons/white/ic_person.png",
-          notification: true
-        },
-        {
-          title: "Menu",
-          iconSource: "assets/icons/white/ic_menu.png",
-          notification: false
-        }
-      ]
-    };
-  },
   components: {
     PlattSearch,
     PlattNavList
+  },
+  data() {
+    return {
+      isMenuOpen: false
+    };
+  },
+  methods: {
+    handleMenuClick() {
+      this.isMenuOpen = !this.isMenuOpen;
+    }
   }
 };
 </script>
@@ -70,7 +62,7 @@ export default {
 .header {
   &-nav {
     background-color: $primaryBackgroundGreen;
-    padding: 5px 10px;
+    padding: 5px 20px 15px;
 
     &-navbar {
       display: flex;
