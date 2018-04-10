@@ -38,7 +38,7 @@ export default {
         },
         {
           text: "Live Help",
-          iconPath: "/assets/icons/green/ic_chat-active.png"
+          iconPath: "assets/icons/green/ic_chat-active.png"
         },
         {
           text: "PIM",

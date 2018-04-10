@@ -98,7 +98,7 @@ export default {
         { title: 'Scan', src: 'assets/icons/green/ic_scanner.png'}
       ],
       tiles: [
-        { title: 'Super Tool Day & Dynamic Data Day', src: '/assets/img/super-tool-day.png'},
+        { title: 'Super Tool Day & Dynamic Data Day', src: 'assets/img/super-tool-day.png'},
         { title: 'Branch Locations', src: 'assets/img/ic_location_b.png'},
         { title: 'Help Center', src: 'assets/img/ic_helpcenter.png'},
         { title: 'Platt University', src: 'assets/img/ic_platt-u.png'},
