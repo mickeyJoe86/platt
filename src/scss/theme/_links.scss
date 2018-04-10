@@ -6,6 +6,10 @@
 	@extend %link;
 	& {
 		color: $linkPrimaryColor;	
+
+		&:hover span {
+			border-bottom: solid 2px #eee;
+		}
 	}
 }
 

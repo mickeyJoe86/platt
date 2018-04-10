@@ -16,9 +16,12 @@
 @mixin button-primary {
 	@extend %button;
 	flex-direction: row;
+	text-align: center;
 	& {
 		background-color: $buttonPrimaryBackgroundColor;		
-
+		div {
+			width: 100%;
+		}
 		&:hover {
 			background-color: darken($buttonPrimaryBackgroundColor, 12%);
 		}

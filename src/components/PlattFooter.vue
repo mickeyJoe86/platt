@@ -11,22 +11,21 @@
 		</div>
 		<div class="footer-panel">
 			<button class="footer-panel-button">
-				<img class="footer-icon" src="/assets/icons/black/ic_comment.png" />
-				Live Help
+				<div><img class="footer-icon" src="/assets/icons/black/ic_comment.png" />Live Help</div>
 			</button>
 		</div>
 		<div class="footer-panel">
-			<a class="footer-panel-link" href="">Contact Us</a>
-			<a class="footer-panel-link" href="">What's New</a>
-			<a class="footer-panel-link" href="">FAQ's</a>
+			<a class="footer-panel-link" href=""><span>Contact Us</span></a>
+			<a class="footer-panel-link" href=""><span>What's New</span></a>
+			<a class="footer-panel-link" href=""><span>FAQ's</span></a>
 		</div>
 	</footer>
 </template>
 
 <script>
 export default {
-  name: 'PlattFooter'
-}
+  name: "PlattFooter"
+};
 </script>
 
 <style lang="scss">
@@ -39,32 +38,61 @@ export default {
   background-color: $primaryBackgroundDark;
   color: #fff;
 
-  .footer-panel {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+  &-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 		margin: 16px 0;
-		padding: 0 20px;
+		
+    &-content {
+      font-size: 1.2em;
+    }
 
-		.footer-panel-content {
-			font-size: 1.2em;
-		}
-
-    .footer-panel-link {
+    &-link {
       @include link-primary;
       width: 32%;
       font-size: 1.1em;
     }
 
-    .footer-panel-button {
-			@include button-primary;
-			width: 61%;
-    }
+    &-button {
+      @include button-primary;
+      width: 66%;
+		}
+
+		&:nth-of-type(1) {
+			p:nth-of-type(1) {
+				line-height: 42px;
+			}
+			p:last-of-type {
+				color: darken(#eee, 25%);
+				font-size: .9em;
+				font-weight: lighter;
+			}
+		}
+		
+		&:nth-of-type(2) {
+			p {
+				font-size: 1.2em;
+				color: darken(#eee, 25%);
+			}
+		}
 
     &:last-of-type {
+			margin-top: 40px;
       width: 100%;
-			justify-content: space-between;
-			flex-direction: row;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}
+//Medium
+@media only screen and (min-width: 768px) {
+  .footer {
+    &-panel {
+			&-button {
+				width: 33%;
+			}
     }
   }
 }
