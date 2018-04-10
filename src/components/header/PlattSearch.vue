@@ -25,6 +25,9 @@ export default {
 			results: []
 		};
 	},
+	computed() {
+		
+	},
   methods: {
     handleInput: debounce(function(e) {
 			this.results = [];
@@ -48,7 +51,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../scss/index";
+@import "../../scss/index";
 
 .search {
   padding: 15px;

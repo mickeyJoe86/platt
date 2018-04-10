@@ -59,7 +59,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../scss/index";
+@import "../../scss/index";
 .nav-list {
   padding: 16px 10px;
 
@@ -90,6 +90,35 @@ export default {
 
       .nav-list-item-link {
         font-weight: 800;
+      }
+    }
+  }
+}
+//Medium
+@media only screen and (min-width: 768px) {
+  .nav-list {
+    border: solid 1px #aeaeae;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+
+    &-item {
+      padding-left: 0;
+      padding-right: 0;
+      width: 33%;
+      text-align: center;      
+      border-left: solid 1px #aeaeae;
+
+      &-link {
+        &-img:last-of-type {
+          display: none;
+        }
+      }
+
+      &.lead-item {
+        padding: 10px 0;
+        width: 100%;
       }
     }
   }

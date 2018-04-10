@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../scss/index";
+@import "../../scss/index";
 .footer {
   display: flex;
   flex-direction: column;

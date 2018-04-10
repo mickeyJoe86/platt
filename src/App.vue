@@ -1,23 +1,20 @@
 <template>
   <div id="app">
     <PlattHeader />
-    <PlattNavList />
     <PlattBody />
     <PlattFooter />
   </div>
 </template>
 
 <script>
-import PlattHeader from './components/PlattHeader'
-import PlattNavList from './components/PlattNavList';
+import PlattHeader from './components/header/PlattHeader';
 import PlattBody from './components/body/PlattBody';
-import PlattFooter from './components/PlattFooter'
+import PlattFooter from './components/footer/PlattFooter';
 
 export default {
   name: 'app',
   components: {
     PlattHeader,
-    PlattNavList,
     PlattBody,
     PlattFooter,
   }
