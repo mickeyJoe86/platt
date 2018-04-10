@@ -11,14 +11,14 @@
           {{ item.text }}
         <img 
           class="nav-list-item-link-img"
-          src="/assets/icons/black/ic_arrow_forward.png" />
+          src="assets/icons/black/ic_arrow_forward.png" />
       </a>
     </li>
   </ul>
 </template>
 
 <script>
-const iconRootPath = "/assets/icons/black/";
+const iconRootPath = "assets/icons/black/";
 export default {
   name: "PlattNavList",
   data() {

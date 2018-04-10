@@ -7,7 +7,7 @@
 			placeholder="What are you looking for?" 
 			@input="handleInput" />
 			<span class="search-input-btn">
-				<img src="/assets/icons/black/ic_search.png" />
+				<img src="assets/icons/black/ic_search.png" />
 			</span>
 			<div class="search-results" v-if="results.length > 0">
 				<div v-for="(result, i) in results" :key="i">{{ result.name }}</div>

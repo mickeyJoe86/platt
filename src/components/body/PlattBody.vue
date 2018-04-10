@@ -26,13 +26,13 @@
       <PlattCard>
         <template slot="promo">
           <a href="#">
-            <img :src="'/assets/img/panel/deal.png'">
+            <img :src="'assets/img/panel/deal.png'">
           </a>
         </template>
       </PlattCard>
       <PlattCard>
         <template slot="mediaBackground">
-          <img :src="'/assets/img/platt-plus.png'">
+          <img :src="'assets/img/platt-plus.png'">
         </template>
         <template slot="title">
           <p class="headline">Get Started Today</p>
@@ -47,9 +47,9 @@
           <div><a href="#">View all</a></div>
         </template>
         <template slot="recentItems">
-          <img :src="'/assets/img/recent/11.png'">
-          <img :src="'/assets/img/recent/22.png'">
-          <img :src="'/assets/img/recent/22.png'">
+          <img :src="'assets/img/recent/11.png'">
+          <img :src="'assets/img/recent/22.png'">
+          <img :src="'assets/img/recent/22.png'">
         </template>
       </PlattCard>
     </section>
@@ -69,7 +69,7 @@
     <section class="main-mobile-banner">
       <PlattCard>
         <template slot="banner">
-          <img :src="'/assets/img/panel/app-get-banner.png'">
+          <img :src="'assets/img/panel/app-get-banner.png'">
         </template>
         <template slot="title">
           <p class="light">Shop better, download the Platt App today</p>
@@ -93,23 +93,23 @@ export default {
   data() {
     return {
       mainButtons: [
-        { title: 'Categories', src: '/assets/icons/green/ic_line_style.png'},
-        { title: 'Search', src: '/assets/icons/green/ic_search.png'},
-        { title: 'Scan', src: '/assets/icons/green/ic_scanner.png'}
+        { title: 'Categories', src: 'assets/icons/green/ic_line_style.png'},
+        { title: 'Search', src: 'assets/icons/green/ic_search.png'},
+        { title: 'Scan', src: 'assets/icons/green/ic_scanner.png'}
       ],
       tiles: [
         { title: 'Super Tool Day & Dynamic Data Day', src: '/assets/img/super-tool-day.png'},
-        { title: 'Branch Locations', src: '/assets/img/ic_location_b.png'},
-        { title: 'Help Center', src: '/assets/img/ic_helpcenter.png'},
-        { title: 'Platt University', src: '/assets/img/ic_platt-u.png'},
+        { title: 'Branch Locations', src: 'assets/img/ic_location_b.png'},
+        { title: 'Help Center', src: 'assets/img/ic_helpcenter.png'},
+        { title: 'Platt University', src: 'assets/img/ic_platt-u.png'},
       ],
       marketTiles: [
-        { title: 'DataComm', src: '/assets/img/datacomm.png'},
-        { title: 'HVAC', src: '/assets/img/hvac.png'},
-        { title: 'Industrial', src: '/assets/img/industrial.png'},
-        { title: 'Lighting', src: '/assets/img/lighting.png'},
-        { title: 'Energy Effeciency', src: '/assets/img/energy.png'},
-        { title: 'Utility', src: '/assets/img/utility.png'},
+        { title: 'DataComm', src: 'assets/img/datacomm.png'},
+        { title: 'HVAC', src: 'assets/img/hvac.png'},
+        { title: 'Industrial', src: 'assets/img/industrial.png'},
+        { title: 'Lighting', src: 'assets/img/lighting.png'},
+        { title: 'Energy Effeciency', src: 'assets/img/energy.png'},
+        { title: 'Utility', src: 'assets/img/utility.png'},
       ]
     };
   }

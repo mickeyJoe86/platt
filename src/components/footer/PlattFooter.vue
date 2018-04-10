@@ -11,7 +11,7 @@
 		</div>
 		<div class="footer-panel">
 			<button class="footer-panel-button">
-				<div><img class="footer-icon" src="/assets/icons/black/ic_comment.png" />Live Help</div>
+				<div><img class="footer-icon" src="assets/icons/black/ic_comment.png" />Live Help</div>
 			</button>
 		</div>
 		<div class="footer-panel">
