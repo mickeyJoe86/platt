@@ -1,4 +1,4 @@
-@mixin repond($min-width, $max-width) {
+@mixin respond($min-width, $max-width) {
   @if $min-width != null and $max-width != null {
     @media (min-width: $min-width, $max-width) {
       @content;

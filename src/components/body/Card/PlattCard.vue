@@ -1,5 +1,5 @@
 <template>
-  <section class="card">
+  <div class="card">
     <div v-if="hasPromo"
       class="card-promo">
       <slot name="promo" />
@@ -28,7 +28,7 @@
       class="card-cta">
       <slot name="cta" />
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -64,12 +64,15 @@ export default {
 @import "../../../scss/index";
 .card {
   margin: 10px 0;
+  height: 180px;
   width: 96%;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
   background-color: #fff;
 
   &-promo {
+    height: 100%;
     img {
+      height: 100%;
       width: 100%;
     }
   }
@@ -95,7 +98,7 @@ export default {
     flex-direction: row;
     justify-content: space-between;
     font-size: 1.1em;
-    font-weight: bold; 
+    font-weight: bold;
     a {
       @include link-inline;
     }
@@ -127,6 +130,12 @@ export default {
     a {
       @include link-inline;
     }
+
+    button {
+      width: 66%;
+      margin: 15px 0;
+      @include button-secondary;
+    }
   }
 
   &-cta {
@@ -134,11 +143,6 @@ export default {
     flex-direction: column;
     align-items: center;
     margin: 20px 0 50px;
-
-    button {
-      width: 66%;
-      @include button-secondary;
-    }
   }
 }
 </style>

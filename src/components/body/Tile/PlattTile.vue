@@ -1,12 +1,12 @@
 <template>
-  <section class="tile">
+  <div class="tile">
     <div class="tile-media-background">
       <slot name="mediaBackground"></slot>
     </div>
     <div class="tile-title">
       <slot name="title"></slot>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -23,7 +23,6 @@ export default {
   flex-direction: column;
   align-items: center;
   height: 200px;
-  width: 45%;
   margin: 10px 0;
   box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.14);
   background-color: #fff;
